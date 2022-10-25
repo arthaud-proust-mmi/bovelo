@@ -1,10 +1,5 @@
 {
-    "name": "hugo-theme-tailwindcss-starter",
-    "version": "0.3.0",
-    "description": "Starter files for a Hugo theme with Tailwindcss",
     "main": "index.js",
-    "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
-    "author": "dirkolbrich <github@dirkolbrich.de>",
     "license": "MIT",
     "scripts": {
         "start": "hugo --gc"
@@ -19,11 +14,5 @@
         "postcss": "^8.x",
         "postcss-cli": "^10.x",
         "tailwindcss": "^3.x"
-    },
-    "browserslist": [
-        "last 1 version",
-        "> 1%",
-        "maintained node versions",
-        "not dead"
-    ]
+    }
 }
