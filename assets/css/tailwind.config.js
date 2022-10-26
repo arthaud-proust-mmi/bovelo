@@ -33,7 +33,9 @@ module.exports = {
       },
     },
     extend: {
-
+      gridTemplateColumns: {
+        'header': '1fr auto 1fr'
+      }
     },
   },
   plugins: [
