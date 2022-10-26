@@ -1,9 +1,9 @@
 languageCode = "fr"
 baseurl = "http://example.com/"
-title = "Hugo Tailwindcss Starter"
+title = "Bovélo"
 
 [params]
-    name = "Hugo Tailwindcss Starter"
+    name = "Bovélo"
     description = "A simple bootstraped theme for Hugo, build with Tailwindcss."
 
     favicon = "favicon.ico"
