@@ -14,7 +14,7 @@
         }
     </style>
 
-    <nav class="flex items-center justify-between flex-wrap">
+    <nav class="flex items-center justify-between flex-wrap bg-primary-2">
         <a href="{{ .Site.Home.Permalink }}" class="flex items-center font-bold">
             {{ .Site.Title }}
         </a>
@@ -35,17 +35,6 @@
             </svg>
         </label>
 
-        <ul id="nav-menu" class="sm:flex w-full sm:w-auto hidden mt-2 sm:mt-0 sm:space-x-2">
-            {{ with .Site.GetPage "/about" }}
-            <li>
-                <a href="{{ .Permalink }}" class="">{{ .Title }}</a>
-            </li>
-            {{ end }}
-            {{ range .Site.Sections }}
-            <li>
-                <a href="{{ .Permalink }}" class="text-gray-500 hover:text-blue-400">{{ .Title }}</a>
-            </li>
-            {{ end }}
-        </ul>
+
     </nav>
 </header>
