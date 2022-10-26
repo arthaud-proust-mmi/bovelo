@@ -27,12 +27,25 @@ module.exports = {
         '1': '#FDF3E6',
         '2': '#FBE8D0',
       },
-      'text': {
+      'typo': {
         '1': '#1A1A1A',
         '2': '#313131',
       },
     },
+    fontSize: {
+      'xs': '0.75rem',
+      'sm': '0.875rem',
+      'md': '1.125rem',
+      'lg': '1.25rem',
+      'xl': '1.75rem',
+      '2xl': '2rem',
+      '3xl': '3rem',
+    },
     extend: {
+      fontFamily: {
+        sans: ['"Lexend Deca"'],
+        display: ['Righteous'],
+      },
       gridTemplateColumns: {
         'header': '1fr auto 1fr'
       }
