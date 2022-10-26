@@ -10,7 +10,10 @@
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
 @layer components {
     .button-download {
-      @apply bg-cta-1 py-2 px-6 h-fit rounded-full border-border-1 border-2;
+      @apply bg-cta-1 py-1 px-3 h-fit rounded-full border-border-1 border-2 lg:px-6;
+    }
+    .buttonPressed {
+      @apply shadow-none;
     }
 
     .welcome-headline {
