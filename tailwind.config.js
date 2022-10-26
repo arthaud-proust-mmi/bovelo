@@ -33,6 +33,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Lexend Deca"'],
+        display: ['Righteous'],
+      },
       gridTemplateColumns: {
         'header': '1fr auto 1fr'
       }
