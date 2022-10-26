@@ -32,6 +32,15 @@ module.exports = {
         '2': '#313131',
       },
     },
+    fontSize: {
+      'xs': '0.75rem',
+      'sm': '0.875rem',
+      'md': '1.125rem',
+      'lg': '1.25rem',
+      'xl': '1.75rem',
+      '2xl': '2rem',
+      '3xl': '3rem',
+    },
     extend: {
       fontFamily: {
         sans: ['"Lexend Deca"'],
