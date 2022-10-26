@@ -27,6 +27,9 @@ module.exports = {
         '1': '#FDF3E6',
         '2': '#FBE8D0',
       },
+      'border' : {
+        '1': '#1A1A1A',
+      },
       'typo': {
         '1': '#1A1A1A',
         '2': '#313131',
@@ -48,6 +51,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         'header': '1fr auto 1fr'
+      },
+      boxShadow: {
+        'buttons': '7px 5px'
       }
     },
   },
