@@ -24,8 +24,13 @@ module.exports = {
         '2': '#FBA11D',
       },
       'background': {
-        '1': '#FDF3E6',
-        '2': '#FBE8D0',
+        '1': '#FAFAFA',
+        '2': '#FDF3E6',
+        '3': '#FBE8D0',
+      },
+      'backdrop': {
+        '1': '#EDEDED7F',
+        '2': '#2828287F',
       },
       'border' : {
         '1': '#1A1A1A',
@@ -33,6 +38,7 @@ module.exports = {
       'typo': {
         '1': '#1A1A1A',
         '2': '#313131',
+        '3': '#595959',
       },
     },
     fontSize: {
