@@ -19,4 +19,8 @@
     .welcome-headline {
         @apply border-r-4;
     }
+
+    .gridFooter {
+      @apply grid grid-cols-fiftyfifty gap-0 my-5;
+    }
 }
