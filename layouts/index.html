@@ -1,19 +1,19 @@
 {{ define "main" }}
 <article class="flex flex-col gap-24 py-10">
-    <section class="mt-24 ">
+    <section class="mt-24 flex flex-col gap-10">
         <image class="w-9/12 mx-auto" src="https://via.placeholder.com/350x350"></image>
-        <p class="mt-12 bg-secondary-2 border-2 rounded-lg p-4">
-            Bovélo a été créée dans un seul but : Donner envie d’explorer Bordeaux à vélo !
+        <p class="bg-secondary-2 border-2 rounded-lg p-4">
+            Bovélo a été créé dans un seul but : Donner envie d’explorer Bordeaux à vélo !
         </p>
     </section>
 
-    <section>
+    <section class="flex flex-col gap-6">
         <div class="flex flex-row gap-4 items-center">
             <h1 class="text-xl">Découvrez Bovélo</h1>
             <div class="button-icon button-shadowed button-cta">{{ partial "icons/Position" . }}</div>
         </div>
 
-        <div class="mt-6 bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
+        <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
             <p class="flex-grow">
                 <span x-show="showBikes">Vous souhaitez récupérer un Bovélo ?</span>
                 <span x-show="!showBikes">Vous souhaitez trouver où garer votre Bovélo ?</span>
@@ -29,7 +29,7 @@
         </div>
 
 
-        <div class="mt-6 bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
+        <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
             <div class="flex flex-col gap-2">
                 <button class="button button-cta button-shadowed">Réserver 30 min</button>
                 <button class="button button-tertiary button-shadowed">Partir avec</button>
@@ -40,18 +40,16 @@
             </div>
         </div>
 
-        <div class="mt-6 bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
+        <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
             <h2 class="text-lg">Débloquez votre vélo avec un QR code</h2>
             <button class="button-icon button-tertiary button-shadowed">{{ partial "icons/CodeQR" . }}</button>
         </div>
-
-
     </section>
 
 
-    <section>
+    <section class="flex flex-col gap-6">
         <h2 class="text-lg">Téléchargez l’application pour changer votre vie</h2>
-        <div class="mt-4 flex flex-row w-full gap-4">
+        <div class="flex flex-row w-full gap-4">
             <button class="w-full button button-tertiary button-shadowed flex flex-row items-center justify-between gap-2">
                 App store
                 {{ partial "icons/Other/AppStore" . }}
@@ -61,6 +59,14 @@
                 {{ partial "icons/Other/PlayStore" . }}
             </button>
         </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+        <h2 class="text-lg">Une carte réinventée !</h2>
+        <image class="w-9/12 mx-auto" src="https://via.placeholder.com/350x350"></image>
+        <p class="text-center">
+            Parfaitement optimisée afin de vous en mettre plein les mirettes !
+        </p>
     </section>
 
     <section class="flex flex-col gap-10">
@@ -85,6 +91,5 @@
 
         <p class="ml-auto">L’équipe Bovélo</p>
     </section>
-
 </article>
 {{ end }}
