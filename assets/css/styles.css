@@ -13,7 +13,26 @@
       @apply bg-cta-1 py-1 px-3 h-fit rounded-full border-border-1 border-2 lg:px-6;
     }
     .buttonPressed {
-      @apply translate-x-2 translate-y-1 shadow-none;
+      @apply translate-x-button-sm translate-y-button-sm shadow-none;
+    }
+
+    .button {
+        @apply py-1 px-3 h-fit rounded-full border-border-1 border-2 lg:px-6 cursor-pointer;
+    }
+    .button-icon {
+        @apply py-2 px-2 h-fit rounded-full border-border-1 border-2 lg:px-6 cursor-pointer;
+    }
+    .button-icon svg {
+        @apply h-[30px] w-[30px];
+    }
+    .button-shadowed {
+        @apply shadow-sm shadow-border-1 active:buttonPressed
+    }
+    .button-cta {
+        @apply bg-cta-1 ;
+    }
+    .button-tertiary {
+        @apply bg-tertiary-1 ;
     }
 
     .welcome-headline {

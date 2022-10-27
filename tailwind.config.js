@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      'transparent': 'transparent',
       'primary': {
         '1': '#5AB3FA',
         '2': '#82f3d6',
@@ -24,8 +25,13 @@ module.exports = {
         '2': '#FBA11D',
       },
       'background': {
-        '1': '#FDF3E6',
-        '2': '#FBE8D0',
+        '1': '#FAFAFA',
+        '2': '#FDF3E6',
+        '3': '#FBE8D0',
+      },
+      'backdrop': {
+        '1': '#EDEDED7F',
+        '2': '#2828287F',
       },
       'border' : {
         '1': '#1A1A1A',
@@ -33,6 +39,7 @@ module.exports = {
       'typo': {
         '1': '#1A1A1A',
         '2': '#313131',
+        '3': '#595959',
       },
     },
     fontSize: {
@@ -53,7 +60,12 @@ module.exports = {
         'header': '1fr auto 1fr'
       },
       boxShadow: {
-        'buttons': '7px 5px'
+        'sm': '2px 2px',
+        'md': '4px 4px',
+      },
+      translate: {
+        'button-sm': '2px',
+        'button-md': '4px',
       }
     },
   },
