@@ -20,7 +20,7 @@
         @apply py-1 px-3 h-fit rounded-full border-border-1 border-2 lg:px-6 cursor-pointer;
     }
     .button-icon {
-        @apply py-2 px-2 h-fit rounded-full border-border-1 border-2 lg:px-6 cursor-pointer;
+        @apply py-2 px-2 h-fit rounded-full border-border-1 border-2 cursor-pointer;
     }
     .button-icon svg {
         @apply h-[30px] w-[30px];
