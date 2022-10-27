@@ -69,7 +69,7 @@ module.exports = {
         'button-md': '4px',
       },
       width: {
-       '120vw': '120vw'
+       '120vw': '140vw'
       },
       maxWidth: {
         'base': '100vw'
