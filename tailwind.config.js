@@ -67,6 +67,12 @@ module.exports = {
       translate: {
         'button-sm': '2px',
         'button-md': '4px',
+      },
+      width: {
+       '120vw': '120vw'
+      },
+      maxWidth: {
+        'base': '100vw'
       }
     },
   },

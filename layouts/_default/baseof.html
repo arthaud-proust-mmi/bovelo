@@ -2,7 +2,7 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{ partial "head.html" . }}
 
-<body class="flex flex-col min-h-screen bg-background-3 text-typo-1">
+<body class="flex flex-col min-h-screen bg-background-3 text-typo-1 w-full max-w-full overflow-x-hidden">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
 
