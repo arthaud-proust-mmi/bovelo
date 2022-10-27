@@ -32,7 +32,7 @@
         @apply bg-cta-1 ;
     }
     .button-tertiary {
-        @apply bg-tertiary-1 ;
+        @apply bg-tertiary-1;
     }
 
     .welcome-headline {
