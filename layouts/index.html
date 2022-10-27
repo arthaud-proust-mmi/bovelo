@@ -1,6 +1,6 @@
 {{ define "main" }}
-<article class="flex flex-col gap-24">
-    <section class="mt-32">
+<article class="flex flex-col gap-24 py-10">
+    <section class="mt-24 ">
         <image class="w-9/12 mx-auto" src="https://via.placeholder.com/350x350"></image>
         <p class="mt-12 bg-secondary-2 border-2 rounded-lg p-4">
             Bovélo a été créée dans un seul but : Donner envie d’explorer Bordeaux à vélo !
@@ -61,6 +61,29 @@
                 {{ partial "icons/Other/PlayStore" . }}
             </button>
         </div>
+    </section>
+
+    <section class="flex flex-col gap-10">
+        <h2 class="text-lg">À propos</h2>
+
+        <div class="message-left w-4/5">
+            Notre équipe est basée à Bordeaux, cocorico !
+        </div>
+
+        <div class="ml-auto w-4/5">
+            <div class="message-right">
+                En partenariat avec TBM, nous avons créé Bovélo afin de réinventer nos habitudes de déplacement, de vie même !
+            </div>
+            <p class="-mt-8 ml-4 mr-12">
+                Attention à ne pas en perdre les pédales !
+            </p>
+        </div>
+
+        <div class="message-left w-4/5">
+            N’hésitez pas à nous dire ce que vous en pensez !
+        </div>
+
+        <p class="ml-auto">L’équipe Bovélo</p>
     </section>
 
 </article>

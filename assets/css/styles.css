@@ -38,4 +38,28 @@
     .welcome-headline {
         @apply border-r-4;
     }
+
+    .message-left {
+        @apply relative bg-secondary-2 p-4 gap-4 border-2 rounded-lg text-lg mb-10;
+    }
+    .message-left::after {
+        content: '';
+        @apply absolute top-[99%] left-[12px] h-0 w-0 border-t-[28px] border-t-secondary-2 border-r-[20px] border-r-transparent;
+    }
+    .message-left::before {
+        content: '';
+        @apply absolute top-full left-[10px] h-0 w-0 border-t-[33px] border-t-typo-2 border-r-[24px] border-r-transparent;
+    }
+
+    .message-right {
+        @apply relative bg-primary-2 p-4 gap-4 border-2 rounded-lg text-lg mb-10;
+    }
+    .message-right::after {
+        content: '';
+        @apply absolute top-[99%] right-[12px] h-0 w-0 border-t-[28px] border-t-primary-2 border-l-[20px] border-l-transparent;
+    }
+    .message-right::before {
+        content: '';
+        @apply absolute top-full right-[10px] h-0 w-0 border-t-[32px] border-t-typo-2 border-l-[23px] border-l-transparent;
+    }
 }
