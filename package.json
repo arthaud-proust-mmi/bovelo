@@ -3,7 +3,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "concurrently 'npm run tailwind:watch' 'npm run hugo:watch'",
-        "build": "npm run tailwind:build && npm run hugo:watch",
+        "build": "npm run tailwind:build && npm run hugo:build",
         "hugo:watch": "hugo serve --disableFastRender",
         "hugo:build": "hugo",
         "tailwind:watch": "npx tailwindcss -i ./assets/css/styles.css -o ./assets/css/output/styles.css --watch",
