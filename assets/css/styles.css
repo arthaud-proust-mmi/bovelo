@@ -31,6 +31,9 @@
     .button-cta {
         @apply bg-cta-1 ;
     }
+    .button-tertiary {
+        @apply bg-tertiary-1 ;
+    }
 
     .welcome-headline {
         @apply border-r-4;
