@@ -5,9 +5,7 @@
 <body class="flex flex-col min-h-screen bg-background-3 text-typo-1">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
-    <main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
-        {{- block "main" . }}{{- end }}
-    </main>
+    {{- block "main" . }}{{- end }}
     {{- partial "footer.html" . -}}
 </body>
 
