@@ -57,7 +57,8 @@ module.exports = {
         display: ['Righteous'],
       },
       gridTemplateColumns: {
-        'header': '1fr auto 1fr'
+        'header': '1fr auto 1fr',
+        'fiftyfifty': '50% 50%',
       },
       boxShadow: {
         'sm': '2px 2px',

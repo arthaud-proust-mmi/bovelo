@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bovélo - Bovélo</title><meta name="generator" content="Hugo 0.104.3" />
 
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script src="https://unpkg.com/akar-icons-web-components" type="module"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&family=Righteous&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/output/styles.css">
@@ -13,19 +17,20 @@
 <body class="flex flex-col min-h-screen bg-background-1 text-typo-1">
 <header class="w-full p-0 fixed bg-secondary-2 border-b-2 border-b-border-2">
 
-  <div class="container grid justify-center md:grid-cols-header mx-auto py-2">
-    <nav class="items-center gap-10 hidden md:flex">
-      <h2 class="text-lg cursor-pointer">Partners</h2>
-      <h2 class="text-lg cursor-pointer">About Us</h2>
-    </nav>
-    <h1 class="font-display text-3xl">Bovélo</h1>
-    <section class="hidden md:flex justify-end items-center">
+  <div class="container grid justify-center sm:grid-cols-header mx-auto py-1 items-center">
+    <div class=""></div>
+    <h1 class="font-display text-xl h-fit md:text-3xl col-start-2 col-end-4">Bovélo</h1>
+    <section class="hidden sm:flex justify-end items-center gap-5">
 
 
-      <div class="imgContainer">
-        
+      <div class="imgContainer w-10 hidden md:block">
+        <img src="/images/icon-temp.png" alt="" class="object-contain w-full">
       </div>
-      <a href="" class="button-download">Download the App</a>
+      <div class="imgContainer w-10 hidden md:block">
+        <img src="/images/icon-temp.png" alt="" class="object-contain w-full">
+      </div>
+
+      <a class="button-download shadow-buttons shadow-border-1 active:buttonPressed cursor-pointer">Download the App</a>
 
     </section>
 
@@ -39,8 +44,42 @@
     <h1 class="font-display text-3xl">Bovélo</h1>
 </article>
 
-    </main><footer class="bottom-0 w-full p-4 text-xs text-center text-gray-400 border-t border-gray-200">
-    <p>made with <a href="https://gohugo.io" class="underline hover:text-blue-400">Hugo</a> and <a href="https://tailwindcss.com" class="underline hover:text-blue-400">TailwindCSS</a></p>
-</footer></body>
+    </main>
+
+<footer class="bottom-0 w-full p-4 text-xs text-center text-gray-400 border-t border-gray-200">
+
+  <section>
+    <h2>Bovélo</h2>
+    <nav>
+      <div class="bg-primary-2"><img class="w-4/5 object-contain" src="/images/icons/socials/instagram.svg" alt=""></div>
+      <div><img src="/images/icons/socials/facebook.svg" alt=""></div>
+
+    </nav>
+
+  </section>
+
+  <section>
+    <h2>Disponible partout</h2>
+    <div>
+      <a href="">
+        <div>
+          <p>Play store</p>
+          <div><img src="" alt=""></div>
+        </div>
+
+      </a>
+      <a href="">
+        <div>
+          <p>App store</p>
+          <div><img src="" alt=""></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+
+</footer>
+</body>
 
 </html>
