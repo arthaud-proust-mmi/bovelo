@@ -1,7 +1,31 @@
 {{ define "main" }}
-<article class="flex flex-col">
-    <section class="pt-32">
-        <image class="w-4/5 mx-auto" src="https://via.placeholder.com/350x350"></image>
+<article class="flex flex-col gap-24">
+    <section class="mt-32">
+        <image class="w-9/12 mx-auto" src="https://via.placeholder.com/350x350"></image>
+        <p class="mt-12 bg-secondary-2 border-2 rounded-lg p-4">
+            Bovélo a été créée dans un seul but : Donner envie d’explorer Bordeaux à vélo !
+        </p>
+    </section>
+
+    <section>
+        <div class="flex flex-row gap-4 items-center">
+            <h1 class="text-xl">Découvrez Bovélo</h1>
+            <div class="button-icon button-shadowed button-cta">{{ partial "icons/Position" . }}</div>
+        </div>
+        <div class="mt-6 bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
+            <p class="flex-grow">
+                <span x-show="showBikes">Vous souhaitez récupérer un Bovélo ?</span>
+                <span x-show="!showBikes">Vous souhaitez trouver où garer votre Bovélo ?</span>
+            </p>
+            <button class="h-full bg-background-2 w-min button button-shadowed p-0" @click="showBikes=!showBikes">
+                <div class="button-icon -m-px" :class="showBikes?'button-cta':'!border-transparent'">
+                    {{ partial "icons/Bike/Normal" . }}
+                </div>
+                <div class="button-icon -m-px" :class="!showBikes?'button-cta':'!border-transparent'">
+                    {{ partial "icons/Parking" . }}
+                </div>
+            </button>
+        </div>
     </section>
 </article>
 {{ end }}

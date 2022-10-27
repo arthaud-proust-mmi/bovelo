@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      'transparent': 'transparent',
       'primary': {
         '1': '#5AB3FA',
         '2': '#82f3d6',
@@ -59,7 +60,12 @@ module.exports = {
         'header': '1fr auto 1fr'
       },
       boxShadow: {
-        'buttons': '7px 5px'
+        'sm': '2px 2px',
+        'md': '4px 4px',
+      },
+      translate: {
+        'button-sm': '2px',
+        'button-md': '4px',
       }
     },
   },
