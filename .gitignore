@@ -9,3 +9,5 @@ hugo_stats.json
 package-lock.json
 
 /assets/css/output
+/public
+.DS_Store
