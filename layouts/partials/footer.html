@@ -8,8 +8,8 @@
     <section class="text-left flex flex-col gap-5">
       <h2 class="font-sans text-lg">Bovélo</h2>
       <nav class="flex gap-5">
-        <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1"><img class="w-3/5 object-contain" src="/images/icons/socials/instagram.svg" alt=""></div>
-        <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1"><img class="w-3/5 object-contain" src="/images/icons/socials/facebook.svg" alt=""></div>
+        <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1 button-shadowed active:buttonPressed"><img class="w-3/5 object-contain" src="/images/icons/socials/instagram.svg" alt=""></div>
+        <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1 button-shadowed active:buttonPressed"><img class="w-3/5 object-contain" src="/images/icons/socials/facebook.svg" alt=""></div>
 
 
       </nav>
@@ -21,20 +21,14 @@
       <h2 class="font-sans text-lg">Disponible partout</h2>
 
       <div class="flex w-full justify-between">
-        <a href="" class="w-5/12 bg-tertiary-1 rounded-full border-2 border-border-1">
-          <div class="p-3 flex justify-between items-center">
-            <p>Play store</p>
-            <div class="w-5"><img class="object-contain" src="/images/icons/play-store.svg" alt=""></div>
-          </div>
-
-        </a>
-        <a href="" class="w-5/12 bg-tertiary-1 rounded-full border-2 border-border-1">
-          <div class="p-3 flex justify-between items-center">
-            <p>App store</p>
-            <div class="w-5"><img class="object-contain" src="/images/icons/app-store.svg" alt=""></div>
-          </div>
-
-        </a>
+        <button class="w-5/12 button button-tertiary button-shadowed flex flex-row items-center justify-between gap-2">
+          App store
+          {{ partial "icons/Other/AppStore" . }}
+        </button>
+        <button class="w-5/12 button button-tertiary button-shadowed flex flex-row items-center justify-between gap-2">
+            Play store
+            {{ partial "icons/Other/PlayStore" . }}
+        </button>
 
       </div>
 
