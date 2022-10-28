@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   loaded = true
   actualPerCent= (actualPx * 100) / pageHeight
-  moveMarquis(0.0, 20.0)
+  moveMarquis(0.0, 28.0)
 })
 
 document.addEventListener("scroll", () => {
@@ -22,7 +22,7 @@ document.addEventListener("scroll", () => {
     actualPx = window.pageYOffset
     actualPerCent= (actualPx * 100) / pageHeight
 
-    moveMarquis(0.0, 22.0)
+    moveMarquis(0.0, 28.0)
   }
 })
 
