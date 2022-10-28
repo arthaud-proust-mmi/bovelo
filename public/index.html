@@ -1,82 +1,242 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang='fr' class="scroll-smooth">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bovélo - Bovélo</title><meta name="generator" content="Hugo 0.104.3" />
 
-    <script src="//unpkg.com/alpinejs" defer></script>
-
-    <script src="https://unpkg.com/akar-icons-web-components" type="module"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&family=Righteous&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/output/styles.css">
+    <link rel="icon" type="image/png" href="/faveicon.png">
+    <script src="/js/main.js"></script>
 </head>
 
-<body class="flex flex-col min-h-screen bg-background-1 text-typo-1">
-<header class="w-full p-0 fixed bg-secondary-2 border-b-2 border-b-border-2">
 
-  <div class="container grid justify-center sm:grid-cols-header mx-auto py-1 items-center">
-    <div class=""></div>
-    <h1 class="font-display text-xl h-fit md:text-3xl col-start-2 col-end-4">Bovélo</h1>
-    <section class="hidden sm:flex justify-end items-center gap-5">
+<body class="flex flex-col min-h-screen bg-background-3 text-typo-1 w-full max-w-full overflow-x-hidden">
+<header class="w-full p-0 sticky top-0 bg-secondary-2 border-b-2 border-b-border-2 z-20">
+  <div class="container mx-auto px-4">
 
+    <div class="grid justify-center sm:grid-cols-header  py-1 items-center">
+      <div class=""></div>
+      <h1 class="font-display text-xl h-fit md:text-3xl">Bovélo</h1>
+      <section class="hidden sm:flex justify-end items-center gap-5 col-start-3">
 
-      <div class="imgContainer w-10 hidden md:block">
-        <img src="/images/icon-temp.png" alt="" class="object-contain w-full">
-      </div>
-      <div class="imgContainer w-10 hidden md:block">
-        <img src="/images/icon-temp.png" alt="" class="object-contain w-full">
-      </div>
+        <a href="/#download" class="button-download button-shadowed active:buttonPressed cursor-pointer">
+          Télécharger l'app
+        </a>
 
-      <a class="button-download shadow-buttons shadow-border-1 active:buttonPressed cursor-pointer">Download the App</a>
+      </section>
 
-    </section>
-
+    </div>
   </div>
 
 
 
 </header>
-<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
-<article class="text-center">
-    <h1 class="font-display text-3xl">Bovélo</h1>
-</article>
 
-    </main>
 
-<footer class="bottom-0 w-full p-4 text-xs text-center text-gray-400 border-t border-gray-200">
 
-  <section>
-    <h2>Bovélo</h2>
-    <nav>
-      <div class="bg-primary-2"><img class="w-4/5 object-contain" src="/images/icons/socials/instagram.svg" alt=""></div>
-      <div><img src="/images/icons/socials/facebook.svg" alt=""></div>
 
-    </nav>
+<main class="container mx-auto px-4 py-10 grid grid-cols-12 md:gap-10 lg:gap-16">
 
-  </section>
 
-  <section>
-    <h2>Disponible partout</h2>
-    <div>
-      <a href="">
-        <div>
-          <p>Play store</p>
-          <div><img src="" alt=""></div>
-        </div>
 
-      </a>
-      <a href="">
-        <div>
-          <p>App store</p>
-          <div><img src="" alt=""></div>
-        </div>
-      </a>
+
+
+    <section class="col-span-full mt-24 grid grid-cols-12 gap-4 md:gap-12">
+    <div class="col-span-full md:col-span-6 relative w-9/12 mx-auto">
+        <image class="h-full w-full" src="/images/heroMokeup.png"></image>
+        <image class="absolute right-0 bottom-0 h-1/3 w-1/3 translate-x-1/3 translate-y-1/3" src="/images/logo.png"></image>
+
     </div>
-  </section>
 
+
+
+
+    <p class="col-span-full md:col-span-6 bg-secondary-2 border-2 rounded-lg p-4">
+
+        Bovélo a été créé dans un seul but : Donner envie d’explorer Bordeaux à vélo !
+    </p>
+</section>
+<div class="relative w-screen pointer-events-none whitespace-nowrap">
+
+  <div class="marquis">
+    <p class="flex justify-between text-md"><span>Télécharger Bovélo</span><span>Télécharger Bovélo</span><span>Télécharger Bovélo</span><span>Télécharger Bovélo</span><span>Télécharger Bovélo</span><span>Télécharger Bovélo</span></p>
+  </div>
+</div>
+
+
+    <section class="mt-24 col-span-full md:col-span-6 flex flex-col gap-6">
+    <div class="flex flex-row gap-4 items-center">
+        <h1 class="text-xl">Découvrez Bovélo</h1>
+        <div class="button-icon button-shadowed button-cta"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C16.3431 12 15 13.3431 15 15C15 16.6569 16.3431 18 18 18C19.6569 18 21 16.6569 21 15C21 13.3431 19.6569 12 18 12ZM12 15C12 11.6863 14.6863 9 18 9C21.3137 9 24 11.6863 24 15C24 18.3137 21.3137 21 18 21C14.6863 21 12 18.3137 12 15Z" fill="#1A1A1A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.45406 5.45406C10.9858 2.92232 14.4196 1.5 18 1.5C21.5804 1.5 25.0142 2.92232 27.5459 5.45406C30.0777 7.9858 31.5 11.4196 31.5 15C31.5 16.5249 31.3382 17.8682 30.9164 19.1406C30.4925 20.4197 29.8306 21.5525 28.9205 22.6881C28.9084 22.7031 28.8961 22.7179 28.8835 22.7324L19.1335 33.9824C18.8486 34.3111 18.435 34.5 18 34.5C17.565 34.5 17.1514 34.3111 16.8665 33.9824L7.11647 22.7324C7.10387 22.7179 7.09156 22.7031 7.07953 22.6881C6.16941 21.5525 5.50754 20.4197 5.08356 19.1406C4.66179 17.8682 4.5 16.5249 4.5 15C4.5 11.4196 5.92232 7.9858 8.45406 5.45406ZM18 4.5C15.2152 4.5 12.5445 5.60625 10.5754 7.57538C8.60625 9.54451 7.5 12.2152 7.5 15C7.5 16.3131 7.63971 17.3173 7.93119 18.1967C8.21816 19.0624 8.67623 19.8794 9.40293 20.79L18 30.7097L26.5971 20.79C27.3238 19.8794 27.7818 19.0624 28.0688 18.1967C28.3603 17.3173 28.5 16.3131 28.5 15C28.5 12.2152 27.3938 9.54451 25.4246 7.57538C23.4555 5.60625 20.7848 4.5 18 4.5Z" fill="#1A1A1A"/>
+</svg>
+</div>
+    </div>
+
+    <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showBikes: true}">
+        <p class="flex-grow">
+            <span x-show="showBikes">Vous souhaitez récupérer un Bovélo ?</span>
+            <span x-show="!showBikes">Vous souhaitez trouver où garer votre Bovélo ?</span>
+        </p>
+        <button class="h-full bg-background-3 w-min button button-shadowed p-0" @click="showBikes=!showBikes">
+            <div class="button-icon -m-px" :class="showBikes?'button-cta':'!border-transparent'">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 28.5C12.3137 28.5 15 25.8137 15 22.5C15 19.1863 12.3137 16.5 9 16.5C5.68629 16.5 3 19.1863 3 22.5C3 25.8137 5.68629 28.5 9 28.5Z" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 28.5C30.3137 28.5 33 25.8137 33 22.5C33 19.1863 30.3137 16.5 27 16.5C23.6863 16.5 21 19.1863 21 22.5C21 25.8137 23.6863 28.5 27 28.5Z" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22.5L12 12H23.25" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 7.5H13.5" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 22.5L22.5 7.5H28.5" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.5 7.5H29.25C29.8467 7.5 30.419 7.73705 30.841 8.15901C31.2629 8.58097 31.5 9.15326 31.5 9.75C31.5 10.3467 31.2629 10.919 30.841 11.341C30.419 11.7629 29.8467 12 29.25 12H28.5" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            <div class="button-icon -m-px" :class="!showBikes?'button-cta':'!border-transparent'">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 23.25V19.05M15 19.05H19.2855C20.3565 19.05 22.5 19.05 22.5 15.9C22.5 12.75 20.3565 12.75 19.2855 12.75H15V19.05Z" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#1A1A1A" stroke-width="3"/>
+</svg>
+
+            </div>
+        </button>
+    </div>
+
+
+    <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center" x-data="{showEgg: false}">
+        <div class="flex flex-col gap-2">
+            <button class="button button-cta button-shadowed">Réserver 30 min</button>
+            <button class="button button-tertiary button-shadowed group" @click="showEgg=!showEgg">
+                <span x-show="!showEgg">Partir avec</span>
+                <span x-show="showEgg">Pas si vite!</span>
+            </button>
+        </div>
+        <div>
+            <h2 class="text-lg">Réservez un vélo à l'avance</h2>
+            <p>ou prenez le en borne directement !</p>
+        </div>
+    </div>
+
+    <div class="bg-secondary-2 p-4 gap-4 border-2 rounded-lg flex flex-row items-center">
+        <h2 class="text-lg">Débloquez votre vélo avec un QR code</h2>
+        <button class="button-icon button-tertiary button-shadowed"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 4.875C32 4.64294 31.9078 4.42038 31.7437 4.25628C31.5796 4.09219 31.3571 4 31.125 4H25.875C25.6429 4 25.4204 4.09219 25.2563 4.25628C25.0922 4.42038 25 4.64294 25 4.875C25 5.10706 25.0922 5.32962 25.2563 5.49372C25.4204 5.65781 25.6429 5.75 25.875 5.75H30.25V10.125C30.25 10.3571 30.3422 10.5796 30.5063 10.7437C30.6704 10.9078 30.8929 11 31.125 11C31.3571 11 31.5796 10.9078 31.7437 10.7437C31.9078 10.5796 32 10.3571 32 10.125V4.875ZM11 4.875C11 4.64294 10.9078 4.42038 10.7437 4.25628C10.5796 4.09219 10.3571 4 10.125 4H4.875C4.64294 4 4.42038 4.09219 4.25628 4.25628C4.09219 4.42038 4 4.64294 4 4.875V10.125C4 10.3571 4.09219 10.5796 4.25628 10.7437C4.42038 10.9078 4.64294 11 4.875 11C5.10706 11 5.32962 10.9078 5.49372 10.7437C5.65781 10.5796 5.75 10.3571 5.75 10.125V5.75H10.125C10.3571 5.75 10.5796 5.65781 10.7437 5.49372C10.9078 5.32962 11 5.10706 11 4.875V4.875ZM31.125 25C30.8929 25 30.6704 25.0922 30.5063 25.2563C30.3422 25.4204 30.25 25.6429 30.25 25.875V30.25H25.875C25.6429 30.25 25.4204 30.3422 25.2563 30.5063C25.0922 30.6704 25 30.8929 25 31.125C25 31.3571 25.0922 31.5796 25.2563 31.7437C25.4204 31.9078 25.6429 32 25.875 32H31.125C31.3571 32 31.5796 31.9078 31.7437 31.7437C31.9078 31.5796 32 31.3571 32 31.125V25.875C32 25.6429 31.9078 25.4204 31.7437 25.2563C31.5796 25.0922 31.3571 25 31.125 25V25ZM4.875 25C4.64294 25 4.42038 25.0922 4.25628 25.2563C4.09219 25.4204 4 25.6429 4 25.875V31.125C4 31.3571 4.09219 31.5796 4.25628 31.7437C4.42038 31.9078 4.64294 32 4.875 32H10.125C10.3571 32 10.5796 31.9078 10.7437 31.7437C10.9078 31.5796 11 31.3571 11 31.125C11 30.8929 10.9078 30.6704 10.7437 30.5063C10.5796 30.3422 10.3571 30.25 10.125 30.25H5.75V25.875C5.75 25.6429 5.65781 25.4204 5.49372 25.2563C5.32962 25.0922 5.10706 25 4.875 25ZM25 11H23.25V12.75H25V11Z" fill="#1A1A1A"/>
+<path d="M19.75 7.5H28.5V16.25H19.75V7.5ZM26.75 9.25H21.5V14.5H26.75V9.25ZM23.25 23.25H25V25H23.25V23.25Z" fill="#1A1A1A"/>
+<path d="M19.75 19.75H28.5V28.5H19.75V19.75ZM26.75 21.5H21.5V26.75H26.75V21.5ZM12.75 11H11V12.75H12.75V11Z" fill="#1A1A1A"/>
+<path d="M16.25 7.5H7.5V16.25H16.25V7.5ZM14.5 9.25V14.5H9.25V9.25H14.5ZM18 18V21.5H16.25V23.25H18V25H14.5V21.5H12.75V25H11V23.25H7.5V21.5H12.75V18H18ZM14.5 21.5H16.25V19.75H14.5V21.5ZM7.5 25H9.25V26.75H12.75V28.5H7.5V25ZM14.5 28.5V26.75H18V28.5H14.5Z" fill="#1A1A1A"/>
+<path d="M11 19.75H7.5V18H11V19.75Z" fill="#1A1A1A"/>
+</svg>
+</button>
+    </div>
+</section>
+
+    <section id="download" class="scroll-mt-36 mt-24 col-span-full md:col-start-2 md:col-end-13 flex flex-col gap-6">
+    <h2 class="text-lg">Téléchargez l’application pour changer votre vie</h2>
+    <div class="flex flex-row md:flex-wrap w-full gap-4">
+        <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            App store
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.88125 15.9455L4.12589 17.1954C4.06806 17.2881 3.9867 17.3648 3.88961 17.4181C3.79252 17.4715 3.68296 17.4997 3.57143 17.5C3.45599 17.4982 3.3428 17.4687 3.24196 17.4141C3.09611 17.3281 2.99082 17.1899 2.94874 17.0292C2.90666 16.8685 2.93116 16.6981 3.01696 16.5548L3.78036 15.305C3.82054 15.229 3.87634 15.1618 3.9443 15.1075C4.01226 15.0533 4.09094 15.0132 4.17548 14.9897C4.26002 14.9662 4.34861 14.9599 4.43579 14.971C4.52296 14.9821 4.60686 15.0105 4.6823 15.0544C4.75774 15.0983 4.82312 15.1568 4.87439 15.2262C4.92566 15.2956 4.96173 15.3745 4.98038 15.4581C4.99903 15.5416 4.99985 15.6279 4.9828 15.7118C4.96575 15.7956 4.93119 15.8752 4.88125 15.9455ZM18.3571 12.5007H14.5161L12.0491 8.43874C12.006 8.36775 11.949 8.30575 11.8811 8.2563C11.8133 8.20685 11.7361 8.17092 11.654 8.15059C11.5718 8.13026 11.4863 8.12593 11.4024 8.13785C11.3186 8.14976 11.2379 8.17769 11.1652 8.22002C11.0924 8.26113 11.0288 8.31589 10.978 8.38112C10.9273 8.44635 10.8903 8.52074 10.8694 8.59997C10.8485 8.6792 10.8439 8.76168 10.8561 8.84263C10.8682 8.92357 10.8968 9.00136 10.9402 9.07146L15.8741 17.1954C15.9319 17.2881 16.0133 17.3648 16.1104 17.4181C16.2075 17.4715 16.317 17.4997 16.4286 17.5C16.544 17.4982 16.6572 17.4687 16.758 17.4141C16.9039 17.3281 17.0092 17.1899 17.0513 17.0292C17.0933 16.8685 17.0688 16.6981 16.983 16.5548L15.2795 13.7505H18.3571C18.5276 13.7505 18.6912 13.6847 18.8117 13.5675C18.9323 13.4503 19 13.2913 19 13.1256C19 12.9599 18.9323 12.8009 18.8117 12.6837C18.6912 12.5665 18.5276 12.5007 18.3571 12.5007ZM11.1652 12.5007H6.97857L10.5464 6.62648H10.5545L12.483 3.45504C12.5704 3.31209 12.5958 3.14126 12.5536 2.98011C12.5114 2.81897 12.4051 2.68073 12.258 2.59578C12.111 2.51084 11.9352 2.48617 11.7695 2.52719C11.6037 2.5682 11.4615 2.67156 11.3741 2.8145L10 5.07201L8.62589 2.80669C8.58263 2.73591 8.52544 2.67411 8.45761 2.62481C8.38977 2.57551 8.31261 2.53968 8.23053 2.51937C8.14845 2.49906 8.06306 2.49467 7.97923 2.50644C7.8954 2.51821 7.81478 2.54591 7.74196 2.58797C7.66915 2.63003 7.60557 2.68562 7.55486 2.75156C7.50415 2.81751 7.46729 2.89251 7.4464 2.9723C7.4255 3.05209 7.42098 3.1351 7.43309 3.21659C7.4452 3.29808 7.4737 3.37645 7.51696 3.44723L9.25268 6.2984L5.48393 12.5007H1.64286C1.47236 12.5007 1.30885 12.5665 1.18829 12.6837C1.06773 12.8009 1 12.9599 1 13.1256C1 13.2913 1.06773 13.4503 1.18829 13.5675C1.30885 13.6847 1.47236 13.7505 1.64286 13.7505H11.1652C11.3357 13.7505 11.4992 13.6847 11.6197 13.5675C11.7403 13.4503 11.808 13.2913 11.808 13.1256C11.808 12.9599 11.7403 12.8009 11.6197 12.6837C11.4992 12.5665 11.3357 12.5007 11.1652 12.5007Z" fill="#1A1A1A"/>
+</svg>
+
+        </button>
+        <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            Play store
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.99988 3.00003L4.25188 2.56803C4.17589 2.52369 4.08955 2.50018 4.00158 2.49988C3.9136 2.49958 3.8271 2.5225 3.75082 2.56633C3.67453 2.61015 3.61116 2.67332 3.5671 2.74947C3.52304 2.82562 3.49985 2.91205 3.49988 3.00003H3.99988ZM3.99988 17H3.49988C3.49985 17.088 3.52304 17.1744 3.5671 17.2506C3.61116 17.3267 3.67453 17.3899 3.75082 17.4337C3.8271 17.4775 3.9136 17.5005 4.00158 17.5002C4.08955 17.4999 4.17589 17.4764 4.25188 17.432L3.99988 17ZM15.9999 10L16.2519 10.432C16.3274 10.388 16.3901 10.325 16.4336 10.2492C16.4772 10.1734 16.5001 10.0875 16.5001 10C16.5001 9.9126 16.4772 9.8267 16.4336 9.7509C16.3901 9.6751 16.3274 9.61204 16.2519 9.56803L15.9999 10ZM3.49988 3.00003V17H4.49988V3.00003H3.49988ZM4.25188 17.432L16.2519 10.432L15.7479 9.56803L3.74788 16.568L4.25188 17.432ZM16.2519 9.56803L4.25188 2.56803L3.74788 3.43203L15.7479 10.432L16.2519 9.56803ZM4.32888 15.376L12.3289 8.37603L11.6709 7.62403L3.67088 14.624L4.32888 15.376ZM3.67088 5.37603L11.6709 12.376L12.3289 11.624L4.32888 4.62403L3.67088 5.37603Z" fill="#1A1A1A"/>
+</svg>
+
+        </button>
+    </div>
+</section>
+
+
+    <section class="mt-24 col-span-full md:col-start-2 md:col-end-12 flex flex-col gap-6">
+    <h2 class="text-lg">Une carte réinventée !</h2>
+    <image class="w-9/12 mx-auto" src="https://via.placeholder.com/350x350"></image>
+    <p class="text-center">
+        Parfaitement optimisée afin de vous en mettre plein les mirettes !
+    </p>
+</section>
+
+
+    <section class="mt-24 col-span-full md:col-start-3 md:col-end-11 flex flex-col gap-10">
+    <h2 class="text-xl">À propos</h2>
+
+    <div class="message-left w-4/5">
+        Notre équipe est basée à Bordeaux, cocorico !
+    </div>
+
+    <div class="ml-auto w-4/5">
+        <div class="message-right">
+            En partenariat avec TBM, nous avons créé Bovélo afin de réinventer nos habitudes de déplacement, de vie même !
+        </div>
+        <p class="-mt-8 ml-4 mr-12">
+            Attention à ne pas en perdre les pédales !
+        </p>
+    </div>
+
+    <div class="message-left w-4/5">
+        N’hésitez pas à nous dire ce que vous en pensez !
+    </div>
+
+    <p class="ml-auto">L’équipe Bovélo</p>
+</section>
+
+
+    
+</main>
+
+
+<footer class="bottom-0 w-full p-4 py-6 border-t border-border-1 bg-secondary-2">
+  <div class="container mx-auto">
+
+    <section class="flex flex-col gap-5 md:gridFooter">
+
+
+      <section class="text-left flex flex-col gap-5">
+        <h2 class="font-sans text-lg">Bovélo</h2>
+        <nav class="flex gap-5">
+          <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1 button-shadowed active:buttonPressed"><img class="w-3/5 object-contain" src="/images/icons/socials/instagram.svg" alt=""></div>
+          <div class="bg-cta-1 w-12 rounded-full grid place-items-center aspect-square border-2 border-solid border-border-1 button-shadowed active:buttonPressed"><img class="w-3/5 object-contain" src="/images/icons/socials/facebook.svg" alt=""></div>
+
+
+        </nav>
+        <a href="https://www.infotbm.com/fr/conditions-generales-de-vente-et-mentions-legales.html" class="underline hidden md:block">Mentions légales</a>
+        <a href="https://www.infotbm.com/fr/politique-de-confidentialite.html" class="underline hidden md:block">Politique de confidentialité</a>
+      </section>
+
+      <section class="text-left flex flex-col gap-5">
+        <h2 class="font-sans text-lg">Disponible partout</h2>
+
+        <div class="flex flex-row md:flex-wrap w-full gap-4">
+          <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            App store
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.88125 15.9455L4.12589 17.1954C4.06806 17.2881 3.9867 17.3648 3.88961 17.4181C3.79252 17.4715 3.68296 17.4997 3.57143 17.5C3.45599 17.4982 3.3428 17.4687 3.24196 17.4141C3.09611 17.3281 2.99082 17.1899 2.94874 17.0292C2.90666 16.8685 2.93116 16.6981 3.01696 16.5548L3.78036 15.305C3.82054 15.229 3.87634 15.1618 3.9443 15.1075C4.01226 15.0533 4.09094 15.0132 4.17548 14.9897C4.26002 14.9662 4.34861 14.9599 4.43579 14.971C4.52296 14.9821 4.60686 15.0105 4.6823 15.0544C4.75774 15.0983 4.82312 15.1568 4.87439 15.2262C4.92566 15.2956 4.96173 15.3745 4.98038 15.4581C4.99903 15.5416 4.99985 15.6279 4.9828 15.7118C4.96575 15.7956 4.93119 15.8752 4.88125 15.9455ZM18.3571 12.5007H14.5161L12.0491 8.43874C12.006 8.36775 11.949 8.30575 11.8811 8.2563C11.8133 8.20685 11.7361 8.17092 11.654 8.15059C11.5718 8.13026 11.4863 8.12593 11.4024 8.13785C11.3186 8.14976 11.2379 8.17769 11.1652 8.22002C11.0924 8.26113 11.0288 8.31589 10.978 8.38112C10.9273 8.44635 10.8903 8.52074 10.8694 8.59997C10.8485 8.6792 10.8439 8.76168 10.8561 8.84263C10.8682 8.92357 10.8968 9.00136 10.9402 9.07146L15.8741 17.1954C15.9319 17.2881 16.0133 17.3648 16.1104 17.4181C16.2075 17.4715 16.317 17.4997 16.4286 17.5C16.544 17.4982 16.6572 17.4687 16.758 17.4141C16.9039 17.3281 17.0092 17.1899 17.0513 17.0292C17.0933 16.8685 17.0688 16.6981 16.983 16.5548L15.2795 13.7505H18.3571C18.5276 13.7505 18.6912 13.6847 18.8117 13.5675C18.9323 13.4503 19 13.2913 19 13.1256C19 12.9599 18.9323 12.8009 18.8117 12.6837C18.6912 12.5665 18.5276 12.5007 18.3571 12.5007ZM11.1652 12.5007H6.97857L10.5464 6.62648H10.5545L12.483 3.45504C12.5704 3.31209 12.5958 3.14126 12.5536 2.98011C12.5114 2.81897 12.4051 2.68073 12.258 2.59578C12.111 2.51084 11.9352 2.48617 11.7695 2.52719C11.6037 2.5682 11.4615 2.67156 11.3741 2.8145L10 5.07201L8.62589 2.80669C8.58263 2.73591 8.52544 2.67411 8.45761 2.62481C8.38977 2.57551 8.31261 2.53968 8.23053 2.51937C8.14845 2.49906 8.06306 2.49467 7.97923 2.50644C7.8954 2.51821 7.81478 2.54591 7.74196 2.58797C7.66915 2.63003 7.60557 2.68562 7.55486 2.75156C7.50415 2.81751 7.46729 2.89251 7.4464 2.9723C7.4255 3.05209 7.42098 3.1351 7.43309 3.21659C7.4452 3.29808 7.4737 3.37645 7.51696 3.44723L9.25268 6.2984L5.48393 12.5007H1.64286C1.47236 12.5007 1.30885 12.5665 1.18829 12.6837C1.06773 12.8009 1 12.9599 1 13.1256C1 13.2913 1.06773 13.4503 1.18829 13.5675C1.30885 13.6847 1.47236 13.7505 1.64286 13.7505H11.1652C11.3357 13.7505 11.4992 13.6847 11.6197 13.5675C11.7403 13.4503 11.808 13.2913 11.808 13.1256C11.808 12.9599 11.7403 12.8009 11.6197 12.6837C11.4992 12.5665 11.3357 12.5007 11.1652 12.5007Z" fill="#1A1A1A"/>
+</svg>
+
+          </button>
+          <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            Play store
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.99988 3.00003L4.25188 2.56803C4.17589 2.52369 4.08955 2.50018 4.00158 2.49988C3.9136 2.49958 3.8271 2.5225 3.75082 2.56633C3.67453 2.61015 3.61116 2.67332 3.5671 2.74947C3.52304 2.82562 3.49985 2.91205 3.49988 3.00003H3.99988ZM3.99988 17H3.49988C3.49985 17.088 3.52304 17.1744 3.5671 17.2506C3.61116 17.3267 3.67453 17.3899 3.75082 17.4337C3.8271 17.4775 3.9136 17.5005 4.00158 17.5002C4.08955 17.4999 4.17589 17.4764 4.25188 17.432L3.99988 17ZM15.9999 10L16.2519 10.432C16.3274 10.388 16.3901 10.325 16.4336 10.2492C16.4772 10.1734 16.5001 10.0875 16.5001 10C16.5001 9.9126 16.4772 9.8267 16.4336 9.7509C16.3901 9.6751 16.3274 9.61204 16.2519 9.56803L15.9999 10ZM3.49988 3.00003V17H4.49988V3.00003H3.49988ZM4.25188 17.432L16.2519 10.432L15.7479 9.56803L3.74788 16.568L4.25188 17.432ZM16.2519 9.56803L4.25188 2.56803L3.74788 3.43203L15.7479 10.432L16.2519 9.56803ZM4.32888 15.376L12.3289 8.37603L11.6709 7.62403L3.67088 14.624L4.32888 15.376ZM3.67088 5.37603L11.6709 12.376L12.3289 11.624L4.32888 4.62403L3.67088 5.37603Z" fill="#1A1A1A"/>
+</svg>
+
+          </button>
+        </div>
+
+        <a href="https://www.infotbm.com/fr/conditions-generales-de-vente-et-mentions-legales.html" class="underline md:hidden">Mentions légales</a>
+        <a href="https://www.infotbm.com/fr/politique-de-confidentialite.html" class="underline md:hidden">Politique de confidentialité</a>
+      </section>
+
+
+    </section>
+  </div>
 
 
 </footer>
