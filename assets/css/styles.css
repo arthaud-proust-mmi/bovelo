@@ -67,6 +67,6 @@
       @apply grid grid-cols-fiftyfifty gap-0 my-5;
     }
     .marquis {
-      @apply py-2 bg-cta-1 border-y-2 border-border-1 w-120vw hidden sm:block absolute left-1/2 translate-x-[-50%] -rotate-12 z-10 -top-36;
+      @apply py-2 bg-cta-1 border-y-2 border-border-1 w-120vw hidden md:block absolute left-1/2 translate-x-[-40%] -rotate-12 z-10  -top-[11rem] lg:-top-[18rem] 2xl:-top-[24rem];
     }
 }
