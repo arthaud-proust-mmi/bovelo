@@ -21,16 +21,15 @@
       <section class="text-left flex flex-col gap-5">
         <h2 class="font-sans text-lg">Disponible partout</h2>
 
-        <div class="flex w-full justify-between">
-          <button class="w-5/12 button button-tertiary button-shadowed flex flex-row items-center justify-between gap-2">
-            App store
+        <div class="flex flex-row md:flex-wrap w-full gap-4">
+          <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            App store
             {{ partial "icons/Other/AppStore" . }}
           </button>
-          <button class="w-5/12 button button-tertiary button-shadowed flex flex-row items-center justify-between gap-2">
-              Play store
-              {{ partial "icons/Other/PlayStore" . }}
+          <button class="w-full md:w-min button button-tertiary button-shadowed flex flex-row items-center justify-between gap-4">
+            Play store
+            {{ partial "icons/Other/PlayStore" . }}
           </button>
-
         </div>
 
         <a href="https://www.infotbm.com/fr/conditions-generales-de-vente-et-mentions-legales.html" class="underline md:hidden">Mentions légales</a>
