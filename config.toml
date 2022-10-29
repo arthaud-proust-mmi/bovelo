@@ -7,7 +7,7 @@ title = "Bovélo"
     description = "A simple bootstraped theme for Hugo, build with Tailwindcss."
 
     favicon = "favicon.ico"
-
+    app_url = "https://www.figma.com/proto/oEE2wLmLUhnmQdVLIBEAIW/Maquettes?page-id=422%3A3670&node-id=567%3A26411&viewport=1047%2C307%2C0.17&scaling=scale-down&starting-point-node-id=567%3A26411&show-proto-sidebar=1"
 [build]
   writeStats = true
 
