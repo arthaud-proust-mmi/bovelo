@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   loaded = true
   actualPerCent= (actualPx * 100) / pageHeight
-  moveMarquis(0.0, 28.0)
+  moveMarquis(0.0, 40.0)
 })
 
 document.addEventListener("scroll", () => {
@@ -22,13 +22,14 @@ document.addEventListener("scroll", () => {
     actualPx = window.pageYOffset
     actualPerCent= (actualPx * 100) / pageHeight
 
-    moveMarquis(0.0, 28.0)
+    moveMarquis(0.0, 40.0)
   }
 })
 
 
 
 function moveMarquis(min, max) {
+  console.log(actualPerCent)
   const marquis = document.querySelector('.marquis')
   if (actualPerCent <= max && actualPerCent >= min) {
 
